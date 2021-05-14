@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main QuoteDiv" id="QuoteDiv">
+            <h1>Quotes</h1>
+            <div class="QuoteButtons">
+                <button id="catgory">Category A</button>
+                <button id="catgory">Category A</button>
+                <button id="catgory">Category A</button>
+            </div>
+            <p class="quoteContent">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Magnam quibusdam voluptatem quae, ullam natus accusantium et, blanditiis laudantium 
+                </p>
+            <h4>Author: <span class="authorName">Kanai</span></h4>
+        </div>
+
+
+        <div class="main" id="InfoDiv">
+            <h1>Hello <span id="userName">Richard</span></h1>
+
+            <div class="dateHolder">
+                <h5 class="Day">Today</h5>
+                <p class="Date">00/00/0000</p>
+            </div>
+
+            <div class="time">
+                <span class="time_hr">00</span>h:
+                <span class="time_min">00</span>m:
+                <span class="time_sec">00</span>
+                <span class="time_AmPm">am</span>
+            </div>
+
+            <div class="aimHolder">
+                <p>Today's Main Aim is:</p>
+                <input type="text" name="Aim" id="Aim">
+            </div>
+
+            <div class="todoListHolder">
+                <form>
+                    <input type="text" name="EnterTodo" id="EnterTodo" placeholder="Enter todo">
+                    <button type="submit">Enter Todo</button>
+                </form>
+
+                <h3>ToDO List</h3>
+                <ul class="todoList">
+                    <li class="todo">Task A <div class="todoBtns"><button id="DoneBtn"> <i class="fa fa-check-square" aria-hidden="true"></i></button> <button id="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button></div></li>
+                    <li class="todo">Task B <div class="todoBtns"><button id="DoneBtn"> <i class="fa fa-check-square" aria-hidden="true"></i></button> <button id="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button></div></li>
+                    <li class="todo">Task C <div class="todoBtns"><button id="DoneBtn"> <i class="fa fa-check-square" aria-hidden="true"></i></button> <button id="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button></div></li>
+                    <li class="todo">Task D <div class="todoBtns"><button id="DoneBtn"> <i class="fa fa-check-square" aria-hidden="true"></i></button> <button id="Delete"><i class="fa fa-trash" aria-hidden="true"></i> </button></div></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="main" id="WeatherDiv">
+            <h1>Weather</h1>
+
+            <div class="WeatherIconHolder">
+                <img src="./cloudy.png" alt="Loading Icon" id="weatherIcon">
+                
+            </div>
+            
+            <p class="description">cloudy</p>
+            <p>Temperature: <span id="temp">21</span>&#176C</p>
+            <p>Wind: <span id="wind">21</span>knots</p>
+            <p>Feeling: <span id="temp">18</span>&#176C</p>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

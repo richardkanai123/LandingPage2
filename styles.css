@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'DotGothic16', sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+    color: rgba(17, 194, 218, 0.829);
+    text-decoration: underline 1px blue;
+}
+h3{
+    font-size: 0.8rem;
+    padding: 2px;
+    color: rgb(158, 20, 73);
+}
+
+h4,h5, span{
+    color: rgb(130, 238, 23);
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+p{
+    color: rgb(23, 240, 70);
+    font: 1.3rem bold;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.2;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(./trainDaytime.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-blend-mode: hard-light(20%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+}
+
+.main{
+    max-width: 33%;
+    width:30%;
+    min-width: 300px;
+    z-index: 10;
+    height: 100%;
+    background-color: rgba(221, 174, 174, 0.151);
+    backdrop-filter: blur(20px), saturate(150%);
+    box-shadow: 0 0 10px 5px grey;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    overflow:auto;
+}
+
+/* .main.QuoteDiv p{
+    color: white;
+    font: 1.3rem bold;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.2;
+} */
+
+.QuoteButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.QuoteButtons button{
+    background-color: rgba(33, 82, 228, 0.705);
+    padding: 5px;
+    margin: 10px;
+    color: seashell;
+    border: none;
+    z-index: 10;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.QuoteButtons button:hover{
+    border: 1px solid black;
+    background-color: rgba(7, 37, 124, 0.849);
+}
+
+#InfoDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#InfoDiv .dateHolder,
+#InfoDiv .time{
+    font-size: 30px;
+    font-weight: 500;
+    color: chartreuse;
+}
+
+.aimHolder input{
+    width: 100%;
+    height: 40px;
+    background:transparent;
+    border-radius: 10px;
+    outline: none;
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline rgb(112, 6, 80);
+}
+
+
+.todoListHolder{
+    padding: 10px  0;
+    margin: 10px;
+}
+.todoListHolder input{
+    background:rgba(165, 42, 42, 0.281);
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.todoListHolder form button{
+    color: red;
+    background: transparent;
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.todoListHolder form button:hover{
+    background-color: rgb(33, 33, 172);
+}
+
+.todoListHolder .todoList{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+    flex: 1;
+}
+
+.todo{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid rgb(105, 104, 104);
+    background-color: rgba(85, 85, 85, 0.562);
+    color: rgba(23, 238, 241, 0.945);
+}
+
+.todo button{
+    margin: 1px;
+    width: 15px;
+    height: 20px;
+    background-color: rgb(8, 90, 167);
+    border: none;
+}
+
+.todo button:hover{
+    border:1px solid black;
+    color: red;
+    width: 20px;
+    background-color: rgba(9, 82, 150, 0.651);
+
+}
+
+.WeatherIconHolder{
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+
+#weatherIcon{
+    width: 80%;
+    height: 90%;
+    animation: Mov 30s ease-in-out infinite;
+}
+
+@keyframes Mov {
+    0%{
+        width: 40%;
+        height: 40%;
+    }
+
+    20%{
+        width: 60%;
+        height: 60%;
+    }
+
+    40%{
+        width: 70%;
+        height: 70%;
+    }
+
+    60%{
+        width: 80%;
+        height: 80%;
+    }
+
+    80%{
+        width: 85%;
+        height: 80%;
+    }
+    100%{
+        width:100px;
+        height: 80px;
+    }
+}
